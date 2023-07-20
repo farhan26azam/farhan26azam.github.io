@@ -1,0 +1,25 @@
+section {
+  padding: 20px;
+  background-color: #f1f1f1;
+  width: 95%;
+  margin-bottom: 80px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.education-item {
+  width: 45%;
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .education-item {
+    width: 100%;
+  }
+}
