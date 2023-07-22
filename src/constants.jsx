@@ -71,8 +71,8 @@ export const PROJECTS_DATA = [
     name: "NFT Marketplace Website",
     technology: "React JS, Solidity, Web3",
     date: "June 2023",
-    description: "Developed an NFT marketplace website for trading digital assets using blockchain technology.",
-    features: ["User authentication", "Token listing and trading", "Blockchain integration"],
+    description: "Developed an NFT marketplace website for trading digital assets only frontend.",
+    features: ["User authentication", "NFTs listings", "NFTs profiles"],
     codeLink: "https://github.com/farhan26azam",
   },
   {
@@ -88,7 +88,7 @@ export const PROJECTS_DATA = [
     technology: "Python, OpenCV",
     date: "April 2023",
     description: "Implemented various image processing techniques using Python and OpenCV library.",
-    features: ["Image filtering", "Edge detection", "Object recognition"],
+    features: ["Image filtering", "Fourier Transforms", "Frequency Mapping"],
     codeLink: "https://github.com/farhan26azam",
   },
   {
