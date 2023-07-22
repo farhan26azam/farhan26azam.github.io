@@ -1,0 +1,72 @@
+/* Projects.css */
+.projects {
+    max-width: 90vw; /* Adjust the width as needed */
+    margin: 0 auto;
+    padding: 40px 0;
+    font-family: Acorn-bold, sans-serif;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 20px;
+  }
+  
+  .project-card {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Ensure the gradient background does not overflow */
+    background: linear-gradient(
+      to right,
+      var(--theme-color-3),
+      var(--theme-color-2),
+      var(--theme-color-3)
+    );
+    background-size: 200% 100%;
+    background-position: left center;
+    color: #fff; /* Set the text color to white */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: movingGradient 5s linear infinite; /* Adjust the animation duration as needed */
+  }
+  
+  @keyframes movingGradient {
+    0% {
+      background-position: 0% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+  
+  .project-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Customizing Swiper pagination bullets */
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #fff;
+  }
+  

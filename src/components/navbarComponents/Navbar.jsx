@@ -9,17 +9,6 @@ import { motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar = ({ backButton, homeButton }) => {
-  const downloadButton = document.getElementById("downloadButton");
-  const location = useLocation();
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const downloadButton = document.getElementById("downloadButton");
-    downloadButton.addEventListener("click", () => {
-      const pdfPath = "path/to/your/pdf.pdf";
-      window.open(pdfPath, "_blank");
-    });
-  });
-
   return (
     <div
       className="flex w-[100%] pr-[4%] pl-[4%]"
@@ -56,11 +45,16 @@ const Navbar = ({ backButton, homeButton }) => {
           </div>
         </motion.div>
       </div>
-      <button className="relative left-0 w-[90%] h-[full]" id="downloadButton">
+      <a
+        href="https://github.com/farhan26azam/MuhammadFarhanAzamCV"
+        className="relative left-0 w-[90%] h-[full]"
+        id="downloadButton"
+        target="_blank"
+      >
         <div className="flex items-center justify-center h-[50%] font-['Acorn-semibold'] border-white border-[1px] rounded-3xl text-[var(--light-gray)]">
-          Download CV
+          Request CV
         </div>
-      </button>
+      </a>
     </div>
   );
 };

@@ -8,7 +8,9 @@ import About from "./components/aboutComponents/About";
 import Work from "./components/workComponents/Work";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Footer from "./components/footerComponents/Footer";
-import Loading from './assets/refresh-arrow.png';
+import Loading from "./assets/refresh-arrow.png";
+import Projects from "./components/projectsComponents/Projects";
+import Skills from "./components/skillsComponents/Skills";
 const loadingSVG = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +75,8 @@ function App() {
       <About />
       <Education />
       <SocialLinks />
-      <Footer />
+      <Projects />
+      <Skills />
     </>
   );
 
@@ -82,7 +85,7 @@ function App() {
       {isLoading ? (
         <div className="mt-[10%]">
           <div className="flex justify-center items-center animate-spin overflow-hidden">
-            <img className="w-[30%]" src={Loading}/>
+            <img className="w-[30%]" src={Loading} />
           </div>
         </div>
       ) : (
@@ -93,13 +96,15 @@ function App() {
           <Routes>
             <Route path="/" element={mainPage} />
 
-            <Route path="/Contact" element={<SocialLinks />} />
+            <Route path="/Connect" element={<SocialLinks />} />
+            <Route path="/Projects" element={<Projects />} />
 
             <Route path="/Education" element={<Education />} />
 
             <Route path="/About" element={<About />} />
             <Route path="/Work" element={<Work />} />
           </Routes>
+          <Footer />
         </div>
       )}
     </>

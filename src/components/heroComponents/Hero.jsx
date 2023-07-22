@@ -50,28 +50,28 @@ const Hero = () => {
       <div className="flex flex-col items-center">
         <div className="flex flex-col justify-center items-center">
           <div className="h-[168px] w-[940px] flex flex-row justify-center items-center">
-            <div className="flex font-['Acorn-bold'] text-[130px] h-[168px] text-[var(--light-gray)]">
-              <div className="cursor-pointer transition-all duration-300 hover:text-[140px] hover:text-[var(--theme-color-4)]">
+            <div className="flex font-['Acorn-bold'] text-[8rem] h-[168px] text-[var(--light-gray)]">
+              <div className="cursor-pointer transition-all duration-300 hover:text-[12rem] hover:text-[var(--theme-color-4)]">
                 Hi. &nbsp;
               </div>
-              <div className="cursor-pointer transition-all duration-300 hover:text-[140px] hover:text-[var(--theme-color-4)]">
+              <div className="cursor-pointer transition-all duration-300 hover:text-[12rem] hover:text-[var(--theme-color-4)]">
                 I'm &nbsp;
               </div>
-              <div className="cursor-pointer transition-all duration-300 hover:text-[140px] hover:text-[var(--theme-color-4)]">
+              <div className="cursor-pointer transition-all duration-300 hover:text-[12rem] hover:text-[var(--theme-color-4)]">
                 Farhan
               </div>
             </div>
           </div>
           <div className="h-[168px] w-fit flex flex-row justify-center items-center">
             <div className="flex font-['Acorn-bold'] text-[130px] h-[168px] text-[var(--light-gray)]">
-              <div className="cursor-pointer transition-all duration-300 hover:text-[140px] hover:text-[var(--theme-color-4)]">
+              <div className="cursor-pointer transition-all duration-300 hover:text-[12rem] hover:text-[var(--theme-color-4)]">
                 A &nbsp;
               </div>
               {/* <Profession /> */}
-              <div className="cursor-pointer transition-all duration-300 hover:text-[140px] hover:text-[var(--theme-color-4)]">
+              <div className="cursor-pointer transition-all duration-300 hover:text-[12rem] hover:text-[var(--theme-color-4)]">
                 Web &nbsp;
               </div>
-              <div className="cursor-pointer transition-all duration-300 hover:text-[140px] hover:text-[var(--theme-color-4)]">
+              <div className="cursor-pointer transition-all duration-300 hover:text-[12rem] hover:text-[var(--theme-color-4)]">
                 Developer
               </div>
             </div>

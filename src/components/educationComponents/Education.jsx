@@ -6,7 +6,7 @@ import {
   EDUCATION_DEGREE,
   UNIVERSITY_COURSES,
 } from "../../constants";
-
+import books from "../../assets/books-pile.png";
 const variants = {
   visible: { opacity: 1, y: 0 },
   hidden: { opacity: 0, y: 50 },
@@ -52,7 +52,13 @@ const Education = () => {
       className="font-['Acorn-bold'] w-[95%] rounded-3xl h-[95vh] mb-[5vh] p-[20px]"
     >
       <div className="flex text-[130px] h-[168px] text-[var(--light-gray)] justify-center mb-[30px]">
-        <div className="cursor-pointer transition-all duration-300 hover:text-[140px]">
+        <div>
+          <img
+            src={books}
+            className="w-[140px] h-[140px] hover:animate-bounce"
+          />
+        </div>
+        <div className="cursor-pointer transition-all duration-300 hover:text-[140px] ml-6">
           Education
         </div>
       </div>
@@ -74,7 +80,7 @@ const Education = () => {
           </div>
         </div>
         <div className="w-[45%] p-[20px] bg-[rgb(255,255,255,0.8)]  h-full rounded-e-3xl">
-        <div className="text-[var(--theme-color-2)] text-center p-[10px] font-semibold text-[60px] rounded-3xl bg-[var(--theme-color-4)] shadow-lg">
+          <div className="text-[var(--theme-color-2)] text-center p-[10px] font-semibold text-[60px] rounded-3xl bg-[var(--theme-color-4)] shadow-lg">
             Certifications
           </div>
           <div className="p-[30px] pt-[30px] grid gap-[5px] text-[20px]">

@@ -59,3 +59,88 @@ export const CERTIFICATIONS = [
   { name: "Intermediate SQL Queries", offeredBy: "Datacamp" },
   { name: "Supervised & Unsupervised ML", offeredBy: "Datacamp" },
 ];
+
+// data.js (Create a new file to store the project data)
+
+// constants.js
+
+// constants.js
+
+export const PROJECTS_DATA = [
+  {
+    name: "NFT Marketplace Website",
+    technology: "React JS, Solidity, Web3",
+    date: "June 2023",
+    description: "Developed an NFT marketplace website for trading digital assets using blockchain technology.",
+    features: ["User authentication", "Token listing and trading", "Blockchain integration"],
+    codeLink: "https://github.com/farhan26azam",
+  },
+  {
+    name: "Zip/Unzip Utility for Linux",
+    technology: "C++, Linux",
+    date: "May 2023",
+    description: "Created a command-line utility for compressing and extracting files on Linux systems.",
+    features: ["File compression", "File extraction", "Support for various archive formats"],
+    codeLink: "https://github.com/farhan26azamy",
+  },
+  {
+    name: "Image Processing using Python",
+    technology: "Python, OpenCV",
+    date: "April 2023",
+    description: "Implemented various image processing techniques using Python and OpenCV library.",
+    features: ["Image filtering", "Edge detection", "Object recognition"],
+    codeLink: "https://github.com/farhan26azam",
+  },
+  {
+    name: "Water Level and Temperature System",
+    technology: "Arduino, Sensors",
+    date: "March 2023",
+    description: "Developed a system to monitor water level and temperature using Arduino and sensors.",
+    features: ["Water level measurement", "Temperature monitoring", "Alerts and notifications"],
+    codeLink: "https://github.com/farhan26azam",
+  },
+  {
+    name: "Route Finder on Area Map",
+    technology: "C++, Graph Algorithms",
+    date: "February 2023",
+    description: "Implemented a route finding algorithm to find the shortest path on an area map.",
+    features: ["Graph representation", "Shortest path calculation", "Optimized pathfinding"],
+    codeLink: "https://github.com/farhan26azam",
+  },
+  {
+    name: "Course Management System",
+    technology: "Java, Spring Boot, MySQL",
+    date: "January 2023",
+    description: "Developed a web-based course management system for educational institutions.",
+    features: ["User roles and permissions", "Course enrollment", "Grade management"],
+    codeLink: "https://github.com/farhan26azam",
+  },
+  {
+    name: "Taj Mahal 3D model",
+    technology: "CAD, 3D Printing",
+    date: "December 2022",
+    description: "Designed and 3D printed a scale model of the Taj Mahal using CAD software.",
+    features: ["CAD modeling", "3D printing", "Architectural design"],
+    codeLink: "https://github.com/farhan26azam",
+  },
+];
+
+// Other constants and data can be added here if needed
+
+
+
+// constants.js
+export const workExperienceData = [
+  {
+    jobTitle: "Front End Developer",
+    company: "The Beelogix",
+    location: "Lahore",
+    date: "June 2023 - Present",
+    responsibilities: [
+      "Develop and maintain front-end features for web applications using React JS.",
+      "Collaborate with the team to design and implement user interfaces and experiences.",
+      "Utilize Redux for state management and ensure code quality through testing.",
+    ],
+  },
+  // Add more work experiences if applicable
+];
