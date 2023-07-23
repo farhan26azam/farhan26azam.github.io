@@ -69,13 +69,13 @@ const Education = () => {
       transition={{ duration: 0.5, ease: "easeInOut" }}
       ref={ref}
       className={`${
-        windowSize?.width > 900 ? `h-[95vh] p-[5px]` : `h-fit p-[20px]`
+        windowSize?.width > 900 ? `h-[fit] p-[5px]` : `h-fit p-[20px]`
       } font-['Acorn-bold'] w-[95%] rounded-3xl  bg-gradient-to-br from-[var(--theme-color-2)] to-[var(--theme-color-4-light)] shadow-lg bg-opacity-30`}
     >
       <div
         className={`${
           windowSize?.width > 900
-            ? `text-[130px] h-[168px] mb-[30px]`
+            ? `text-[130px] h-[168px] mb-[40px]`
             : `text-[50px] mb-[10px]`
         } flex  text-[var(--light-gray)] justify-center`}
       >
@@ -99,7 +99,7 @@ const Education = () => {
             windowSize?.width > 900
               ? `w-[45%] p-[20px] rounded-s-3xl`
               : `w-[100%] p-[2px] rounded-3xl`
-          }  bg-[rgb(255,255,255,0.8)]  h-full `}
+          }  bg-[rgb(255,255,255,0.8)]  h-full mb-[10px]`}
         >
           <div
             className={`${

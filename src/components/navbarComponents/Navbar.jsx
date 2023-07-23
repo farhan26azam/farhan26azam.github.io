@@ -49,7 +49,7 @@ const Navbar = ({ backButton, homeButton }) => {
           onClick={backButton}
         >
           {location.pathname !== "/" && (
-            <div className="flex items-center justify-center h-[50%] font-['Acorn-semibold'] border-white border-[1px] rounded-3xl text-[var(--light-gray)]">
+            <div className="flex items-center justify-center h-[50%] font-['Acorn-bold'] border-white border-[1px] rounded-3xl text-[var(--light-gray)]">
               Back
             </div>
           )}
@@ -61,7 +61,7 @@ const Navbar = ({ backButton, homeButton }) => {
           onClick={homeButton}
         >
           {location.pathname !== "/" && (
-            <div className="flex items-center justify-center h-[50%] font-['Acorn-semibold'] border-white border-[1px] rounded-3xl text-[var(--light-gray)]">
+            <div className="flex items-center justify-center h-[50%] font-['Acorn-bold'] border-white border-[1px] rounded-3xl text-[var(--light-gray)]">
               Home
             </div>
           )}
@@ -96,9 +96,9 @@ const Navbar = ({ backButton, homeButton }) => {
                     className={`${
                       windowSize?.width > 900 &&
                       `hover:text-[26px] hover:border-transparent hover:h-[50px]`
-                    } transition-all duration-700 ease-in-out text-[18px]   h-[39px] font-['Acorn-semibold'] bg-[var(--theme-color-4)] px-3 rounded-3xl   flex flex-col items-center justify-center`}
+                    } transition-all duration-700 ease-in-out text-[18px]   h-[39px] font-['Acorn-bold'] bg-[var(--theme-color-4)] px-3 rounded-3xl   flex flex-col items-center justify-center`}
                   >
-                    <span className="opacity-100 text-[var(--theme-color-1)] font-semibold">
+                    <span className="opacity-100 text-[var(--theme-color-1)]">
                       {item}
                     </span>
                   </Link>
@@ -107,9 +107,9 @@ const Navbar = ({ backButton, homeButton }) => {
                   <Link
                     key={index}
                     to={`/${item}`}
-                    className="transition-all duration-700 ease-in-out text-[18px] hover:text-[26px] hover:h-[50px] h-[39px] font-['Acorn-semibold'] bg-[var(--theme-color-4)] px-3 rounded-3xl hover:border-transparent  flex flex-col items-center justify-center"
+                    className="transition-all duration-700 ease-in-out text-[18px] hover:text-[26px] hover:h-[50px] h-[39px] font-['Acorn-bold'] bg-[var(--theme-color-4)] px-3 rounded-3xl hover:border-transparent  flex flex-col items-center justify-center"
                   >
-                    <span className="opacity-100 text-[var(--theme-color-1)] font-semibold">
+                    <span className="opacity-100 text-[var(--theme-color-1)]">
                       {item}
                     </span>
                   </Link>

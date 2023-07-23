@@ -78,7 +78,7 @@ const Hero = () => {
       <div
         className={
           windowSize?.width > 900
-            ? `absolute top-[10%] left-[10%] hover:animate-bounce w-[200px] h-[200px]`
+            ? `absolute top-[10%] left-[10%] hover:animate-bounce w-[8vw] h-[8vw]`
             : `absolute left-[10%] top-[5%] w-[120px] h-[120px]`
         }
         ref={jsRef}
@@ -89,7 +89,7 @@ const Hero = () => {
       <div
         className={
           windowSize?.width > 900
-            ? `absolute top-[10%] right-[10%] hover:animate-bounce w-[200px] h-[200px]`
+            ? `absolute top-[10%] right-[10%] hover:animate-bounce w-[8vw] h-[8vw]`
             : `absolute right-[10%] top-[5%] w-[120px] h-[120px]`
         }
         ref={reactRef}

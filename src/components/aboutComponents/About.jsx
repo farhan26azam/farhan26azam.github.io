@@ -172,14 +172,14 @@ const About = () => {
       transition={{ duration: 0.5, ease: "easeInOut" }}
       ref={ref}
       className={`w-[95%] font-['Acorn-bold'] rounded-3xl ${
-        seeMore ? `h-[fit]` : `h-[95vh]`
+        seeMore ? `h-[fit]` : `h-[fit]`
       } p-[20px] bg-gradient-to-br from-[var(--theme-color-2)] to-[var(--theme-color-4-light)] shadow-lg bg-opacity-30`}
     >
       <div
         className={`${
           windowSize?.width > 900
-            ? `text-[130px] h-[168px] mb-[30px]`
-            : `text-[50px] mb-[10px]`
+            ? `text-[100px] mb-[1%]`
+            : `text-[50px] mb-[1%]`
         } flex  text-[var(--light-gray)] justify-center`}
       >
         <div
@@ -251,7 +251,7 @@ const About = () => {
           <div
             className={`${
               windowSize?.width > 900
-                ? `w-full p-[30px] gap-[5px] grid-cols-1 text-[26px] overflow-hidden`
+                ? `w-full p-[30px] gap-[5px] grid-cols-1 text-[26px] overflow-auto`
                 : `p-[6px] gap-3 text-[16px] grid-cols-1`
             } pt-0 grid`}
           >
