@@ -106,9 +106,9 @@ function App() {
       {Divider}
       <Education />
       {Divider}
-      <SocialLinks />
-      {Divider}
       <Projects />
+      {Divider}
+      <SocialLinks />
       {/* {Divider} */}
       {/* <Skills /> */}
     </>

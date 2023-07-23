@@ -78,7 +78,7 @@ const Hero = () => {
       <div
         className={
           windowSize?.width > 900
-            ? `absolute top-[10%] left-[10%] hover:animate-bounce w-[8vw] h-[8vw]`
+            ? `absolute top-[10%] left-[10%] hover:animate-bounce w-[10vw] h-[10vw]`
             : `absolute left-[10%] top-[5%] w-[120px] h-[120px]`
         }
         ref={jsRef}
@@ -89,7 +89,7 @@ const Hero = () => {
       <div
         className={
           windowSize?.width > 900
-            ? `absolute top-[10%] right-[10%] hover:animate-bounce w-[8vw] h-[8vw]`
+            ? `absolute top-[10%] right-[10%] hover:animate-bounce w-[10vw] h-[10vw]`
             : `absolute right-[10%] top-[5%] w-[120px] h-[120px]`
         }
         ref={reactRef}
@@ -106,7 +106,7 @@ const Hero = () => {
           {windowSize?.width > 900 ? (
             <div className="flex flex-row justify-center items-center">
               <div
-                className={`text-[8vw] flex font-['Acorn-bold'] h-[168px] text-[var(--light-gray)]`}
+                className={`${windowSize?.width > 900 ? `text-[130px]` : `text-[50px]`} flex font-['Acorn-bold'] h-[168px] text-[var(--light-gray)]`}
               >
                 <div className={heroText}>Hi. &nbsp;</div>
                 <div className={heroText}>I'm &nbsp;</div>

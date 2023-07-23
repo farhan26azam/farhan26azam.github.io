@@ -19,7 +19,7 @@ export const SOCIAL_SITES = [
     logo: "/assets/github-logo.png",
     name: "@farhan26azam",
     button: "Visit",
-    link: "https://github.com/farhan26azam",
+    link: "https://www.github.com/farhan26azam",
   },
 ];
 

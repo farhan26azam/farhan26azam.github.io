@@ -69,7 +69,7 @@ const WorkDetails = () => {
       variants={variants}
       transition={{ duration: 0.5, ease: "easeInOut" }}
       ref={ref}
-      className={`w-[95%] font-['Acorn-bold']  rounded-3xl h-[95vh] p-[20px] bg-gradient-to-br from-[var(--theme-color-2)] to-[var(--theme-color-4-light)] shadow-lg bg-opacity-30 my-[10%]`}
+      className={`w-[95%] font-['Acorn-bold']  rounded-3xl h-[fit] p-[20px] bg-gradient-to-br from-[var(--theme-color-2)] to-[var(--theme-color-4-light)] shadow-lg bg-opacity-30 my-[10%]`}
     >
       <div
         className={`${
@@ -84,14 +84,14 @@ const WorkDetails = () => {
       </div>
       <div
         className={`${
-          windowSize?.width > 900 ? `h-[70%]` : `h-[85%]`
+          windowSize?.width > 900 ? `h-[fit]` : `h-[fit]`
         } flex flex-wrap justify-center h-[70%] text-[rgb(0,0,0,0.8)] gap-[20px]`}
       >
         {workExperienceData.map((experience, index) => (
           <div
             key={index}
             className={`${
-              windowSize?.width > 900 ? `w-[45%] p-[20px]` : `w-[98%] p-[5px]`
+              windowSize?.width > 900 ? `w-[70%] p-[20px]` : `w-[98%] p-[5px]`
             }  bg-[rgb(255,255,255,0.8)] h-full rounded-3xl`}
           >
             <div

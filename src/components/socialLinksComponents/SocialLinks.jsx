@@ -294,8 +294,9 @@ export default function SocialLinks() {
                         }}
                       >
                         <a
-                          href="https://www.github.com/farhan26azam/"
+                          href="https://github.com/farhan26azam"
                           target="_blank"
+                          rel="noopener noreferrer"
                           className="w-full h-full pr-1 pl-1 flex justify-center items-center rounded-xl cursor-pointer"
                           style={{
                             backgroundColor: "var(--github-action)",
