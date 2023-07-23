@@ -77,7 +77,7 @@ const Navbar = ({ backButton, homeButton }) => {
         <motion.div
           className={`rounded-[40px] bg-[rgb(255,255,255,0.01)] hover:bg-[rgb(255,255,255,0.2)]  duration-300 shadow-2xl flex flex-row justify-center mx-3.5 text-center items-center top-0 ${
             windowSize?.width > 900
-              ? `w-[80%] hover:w-screen hover:border-transparent hover:scale-110`
+              ? `w-[80%] hover:w-[85%] hover:border-transparent hover:scale-110`
               : `w-[100%]`
           }   border-[rgb(255,255,255,0.3)]  border-2`}
         >
@@ -107,7 +107,7 @@ const Navbar = ({ backButton, homeButton }) => {
                   <Link
                     key={index}
                     to={`/${item}`}
-                    className="transition-all duration-700 ease-in-out text-[18px] hover:text-[26px] hover:h-[50px] h-[39px] font-['Acorn-bold'] bg-[var(--theme-color-4)] px-3 rounded-3xl hover:border-transparent  flex flex-col items-center justify-center"
+                    className="transition-all duration-700 ease-in-out text-[18px] h-[39px] font-['Acorn-bold'] bg-[var(--theme-color-4)] px-3 rounded-3xl  flex flex-col items-center justify-center"
                   >
                     <span className="opacity-100 text-[var(--theme-color-1)]">
                       {item}

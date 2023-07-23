@@ -69,7 +69,7 @@ const WorkDetails = () => {
       variants={variants}
       transition={{ duration: 0.5, ease: "easeInOut" }}
       ref={ref}
-      className={`w-[95%] font-['Acorn-bold']  rounded-3xl h-[fit] p-[20px] bg-gradient-to-br from-[var(--theme-color-2)] to-[var(--theme-color-4-light)] shadow-lg bg-opacity-30 my-[10%]`}
+      className={`w-[95%] font-['Acorn-bold']  rounded-3xl h-[fit] p-[20px] bg-gradient-to-br from-[var(--theme-color-2)] to-[var(--theme-color-4-light)] shadow-lg bg-opacity-30 my-[5vh]`}
     >
       <div
         className={`${
