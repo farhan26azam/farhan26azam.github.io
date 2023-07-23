@@ -1,8 +1,9 @@
-import React from "react";
+import * as React from "react";
 import {
   NAVBAR_LINKS_LEFT,
   NAVBAR_LINKS_CENTER,
   NAVBAR_LINKS_RIGHT,
+  NAVBAR_LINKS_CENTER_SMALL,
 } from "../../constants";
 import { motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
@@ -12,6 +13,7 @@ const Navbar = ({ backButton, homeButton }) => {
     width: window.innerWidth,
     height: window.innerHeight,
   });
+  const [seeMore, setSeeMore] = React.useState(false);
 
   React.useEffect(() => {
     // Function to update window size state
@@ -33,8 +35,13 @@ const Navbar = ({ backButton, homeButton }) => {
 
   return (
     <div
-      className="flex w-[100%] pr-[4%] pl-[4%]"
-      style={{ display: "grid", gridTemplateColumns: "10% 10% 60% 20%" }}
+      className={`flex w-[100%] ${
+        windowSize?.width > 900 ? `px-[4%]` : `px-0`
+      }`}
+      style={{
+        display: windowSize?.width > 900 && "grid",
+        gridTemplateColumns: windowSize?.width > 900 && "10% 10% 60% 20%",
+      }}
     >
       {windowSize?.width > 900 && (
         <button
@@ -60,20 +67,53 @@ const Navbar = ({ backButton, homeButton }) => {
           )}
         </button>
       )}
-      <div className="flex justify-center w-full">
-        <motion.div className="rounded-[40px] bg-[rgb(255,255,255,0.01)] hover:bg-[rgb(255,255,255,0.2)] hover:scale-110 duration-300 shadow-2xl flex flex-row justify-center mx-3.5 text-center items-center top-0 w-[700px] hover:w-[900px] h-20 border-[rgb(255,255,255,0.3)] hover:border-transparent border-2">
-          <div className="flex flex-row w-full justify-between h-14 items-center  p-[20px] mb-2">
-            {NAVBAR_LINKS_CENTER?.map((item, index) => (
-              <Link
-                key={index}
-                to={`/${item}`}
-                className="transition-all duration-700 ease-in-out text-[18px] hover:text-[26px] hover:h-[50px] h-[39px] font-['Acorn-semibold'] bg-[var(--theme-color-4)] px-3 rounded-3xl hover:border-transparent  flex flex-col items-center justify-center"
-              >
-                <span className="opacity-100 text-[var(--theme-color-1)] font-semibold">
-                  {item}
-                </span>
-              </Link>
-            ))}
+      <div
+        className={`w-[96%] ${
+          windowSize?.width > 900
+            ? `h-[80px] flex justify-center`
+            : `flex flex-col h-[60px]`
+        }`}
+      >
+        <motion.div
+          className={`rounded-[40px] bg-[rgb(255,255,255,0.01)] hover:bg-[rgb(255,255,255,0.2)]  duration-300 shadow-2xl flex flex-row justify-center mx-3.5 text-center items-center top-0 ${
+            windowSize?.width > 900
+              ? `w-[80%] hover:w-screen hover:border-transparent hover:scale-110`
+              : `w-[100%]`
+          }   border-[rgb(255,255,255,0.3)]  border-2`}
+        >
+          <div
+            className={`flex flex-row w-full ${
+              windowSize?.width > 900
+                ? `justify-between p-[20px]`
+                : `justify-between p-[10px]`
+            } items-center mb-2`}
+          >
+            {windowSize?.width > 900
+              ? NAVBAR_LINKS_CENTER?.map((item, index) => (
+                  <Link
+                    key={index}
+                    to={`/${item}`}
+                    className={`${
+                      windowSize?.width > 900 &&
+                      `hover:text-[26px] hover:border-transparent hover:h-[50px]`
+                    } transition-all duration-700 ease-in-out text-[18px]   h-[39px] font-['Acorn-semibold'] bg-[var(--theme-color-4)] px-3 rounded-3xl   flex flex-col items-center justify-center`}
+                  >
+                    <span className="opacity-100 text-[var(--theme-color-1)] font-semibold">
+                      {item}
+                    </span>
+                  </Link>
+                ))
+              : NAVBAR_LINKS_CENTER_SMALL?.map((item, index) => (
+                  <Link
+                    key={index}
+                    to={`/${item}`}
+                    className="transition-all duration-700 ease-in-out text-[18px] hover:text-[26px] hover:h-[50px] h-[39px] font-['Acorn-semibold'] bg-[var(--theme-color-4)] px-3 rounded-3xl hover:border-transparent  flex flex-col items-center justify-center"
+                  >
+                    <span className="opacity-100 text-[var(--theme-color-1)] font-semibold">
+                      {item}
+                    </span>
+                  </Link>
+                ))}
           </div>
         </motion.div>
       </div>

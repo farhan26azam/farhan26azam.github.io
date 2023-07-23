@@ -2,10 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[rgb(0,0,0,0.4)] py-10 text-white w-full">
+    <footer className="bg-[rgb(0,0,0,0.4)] py-10 text-white w-full font-['Acorn-bold']">
       <div className="container mx-auto flex flex-col items-center">
         <h2 className="text-4xl font-bold mb-4">Contact Me</h2>
-        <p className="mb-4">
+        <p className="mb-4 font-['Acorn-semibold']">
           Email: <a href="mailto:farhan26azam@gmail.com" className="text-white">farhan26azam@gmail.com</a>
         </p>
         <div className="flex mb-4">

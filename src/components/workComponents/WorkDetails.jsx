@@ -8,7 +8,7 @@ const variants = {
   hidden: { opacity: 0, y: 50 },
 };
 
-const Work = () => {
+const WorkDetails = () => {
   const [windowSize, setWindowSize] = React.useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -69,7 +69,7 @@ const Work = () => {
       variants={variants}
       transition={{ duration: 0.5, ease: "easeInOut" }}
       ref={ref}
-      className={`w-[95%] font-['Acorn-bold']  rounded-3xl h-[95vh] p-[20px] bg-gradient-to-br from-[var(--theme-color-2)] to-[var(--theme-color-4-light)] shadow-lg bg-opacity-30`}
+      className={`w-[95%] font-['Acorn-bold']  rounded-3xl h-[95vh] p-[20px] bg-gradient-to-br from-[var(--theme-color-2)] to-[var(--theme-color-4-light)] shadow-lg bg-opacity-30 my-[10%]`}
     >
       <div
         className={`${
@@ -129,4 +129,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default WorkDetails;

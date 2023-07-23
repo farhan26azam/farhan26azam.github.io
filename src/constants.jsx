@@ -1,4 +1,5 @@
 export const NAVBAR_LINKS_CENTER = ["Work", "About", "Education", "Projects" , "Connect"];
+export const NAVBAR_LINKS_CENTER_SMALL = ["Work", "About", "Education", "More"];
 export const NAVBAR_LINKS_LEFT = ["LinkedIN", "Github"];
 export const NAVBAR_LINKS_RIGHT = ["Download CV"];
 export const HERO_TEXT = "Hi. I'm Farhan, A Web Developer";
@@ -32,14 +33,13 @@ export const UNIVERSITY_COURSES = [
   "Digital Logic Design",
   "Data Structures and Algorithms",
   "Microcontrollers and Interfacing",
-  "Database Management Systems",
-  "Probability and Statistics",
+  "Computer Communication and Networks",
   "Computer Organization and Architecture",
   "Operating Systems",
   "Digital Signals Processing",
   "Embedded Systems",
   "Machine Learning",
-  "Computer Communication and Networks",
+  "Database Management Systems",
 ];
 
 export const CERTIFICATIONS = [
@@ -69,7 +69,7 @@ export const CERTIFICATIONS = [
 export const PROJECTS_DATA = [
   {
     name: "NFT Marketplace Website",
-    technology: "React JS, Solidity, Web3",
+    technology: "HTML, CSS, PHP",
     date: "June 2023",
     description: "Developed an NFT marketplace website for trading digital assets only frontend.",
     features: ["User authentication", "NFTs listings", "NFTs profiles"],
@@ -127,6 +127,15 @@ export const PROJECTS_DATA = [
 
 // Other constants and data can be added here if needed
 
+  export const aboutData = {
+    name: "Muhammad Farhan Azam",
+    title: "Developer",
+    location: "Lahore, Pakistan",
+    email: "farhan26azam@gmail.com",
+    linkedin: "linkedin.com/in/muhammad-farhan-azam/",
+    github: "github.com/farhan26azam",
+    aboutMe: "Innovative and detail-oriented computer engineer specializing in front-end development and software engineering. With a strong proficiency in React JS, JavaScript, and comprehensive knowledge of database management systems, I bring a dynamic and adaptable approach to every project. My creative mindset, combined with analytical problem-solving skills, enables me to deliver exceptional solutions. Driven by a passion for continuous improvement, I actively seek out new technologies and industry trends to enhance user experiences and drive efficiency. Thriving in collaborative environments, I excel at tackling complex challenges and working alongside diverse teams. Seeking an opportunity to contribute my expertise to a forward-thinking organization at the forefront of cutting-edge software development, where I can make a significant impact and drive transformative innovations.",
+  };
 
 
 // constants.js

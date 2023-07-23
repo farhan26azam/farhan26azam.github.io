@@ -12,32 +12,7 @@ const variants = {
   hidden: { opacity: 0, y: 50 },
 };
 
-const Education = () => {
-  const ref = useRef(null);
-  const controls = useAnimation();
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          controls.start("visible");
-        });
-      },
-      {
-        threshold: 0.5, // Adjust the threshold value as needed
-      }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, [controls]);
-
+const EducationDetails = () => {
   const [windowSize, setWindowSize] = React.useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -62,15 +37,11 @@ const Education = () => {
   }, []);
 
   return (
-    <motion.div
-      animate={controls}
-      initial="hidden"
+    <div
       variants={variants}
-      transition={{ duration: 0.5, ease: "easeInOut" }}
-      ref={ref}
       className={`${
         windowSize?.width > 900 ? `h-[95vh] p-[5px]` : `h-fit p-[20px]`
-      } font-['Acorn-bold'] w-[95%] rounded-3xl  bg-gradient-to-br from-[var(--theme-color-2)] to-[var(--theme-color-4-light)] shadow-lg bg-opacity-30`}
+      } font-['Acorn-bold'] w-[95%] rounded-3xl  bg-gradient-to-br from-[var(--theme-color-2)] to-[var(--theme-color-4-light)] shadow-lg bg-opacity-30 my-[5%]`}
     >
       <div
         className={`${
@@ -134,12 +105,21 @@ const Education = () => {
             } pt-0 grid gap-[5px] overflow-hidden`}
           >
             {UNIVERSITY_COURSES?.map((course) => (
-              <p className="border-b-[1px] border-black" key={course}>{`${course}`}</p>
+              <p
+                className="border-b-[1px] border-black"
+                key={course}
+              >{`${course}`}</p>
             ))}
           </div>
         </div>
-        <div className={`${windowSize?.width > 900 ? `w-[45%] rounded-e-3xl p-[20px]`:`w-[98%] rounded-3xl p-[5px] mt-2`}  bg-[rgb(255,255,255,0.8)]  h-full `}>
         <div
+          className={`${
+            windowSize?.width > 900
+              ? `w-[45%] rounded-e-3xl p-[20px]`
+              : `w-[98%] rounded-3xl p-[5px] mt-2`
+          }  bg-[rgb(255,255,255,0.8)]  h-full `}
+        >
+          <div
             className={`${
               windowSize?.width > 900
                 ? `p-[10px] text-[60px]`
@@ -148,10 +128,20 @@ const Education = () => {
           >
             Certifications
           </div>
-          <div className={`${windowSize?.width > 900 ? `p-[30px] pt-[30px]` : `p-[15px] pt-[10px]`} grid gap-[5px] text-[20px] overflow-auto`}>
+          <div
+            className={`${
+              windowSize?.width > 900
+                ? `p-[30px] pt-[30px]`
+                : `p-[15px] pt-[10px]`
+            } grid gap-[5px] text-[20px] overflow-auto`}
+          >
             {CERTIFICATIONS?.map((course) => (
               <a href={course?.link} target="_blank" key={course.name}>
-                <div className={`${windowSize?.width > 900 ? `flex`:``} justify-between cursor-pointer border-black border-b-[1px] p-1`}>
+                <div
+                  className={`${
+                    windowSize?.width > 900 ? `flex` : ``
+                  } justify-between cursor-pointer border-black border-b-[1px] p-1`}
+                >
                   <p>{course.name}</p>
                   <p className="text-blue-600">{course.offeredBy}</p>
                 </div>
@@ -160,8 +150,8 @@ const Education = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
-export default Education;
+export default EducationDetails;

@@ -2,12 +2,17 @@ body {
 	/* background: linear-gradient(-45deg, #025A4E, #364442, #557271, #4C6763); */
 	/* background: linear-gradient(-45deg, var(--theme-color-1), var(--theme-color-2), var(--theme-color-3)); */
 	background-color: var(--theme-color-2);
-	background-size: 100% 100%;
-	animation: gradient 10s ease infinite;
-	height: 100vh;
+	/* animation: gradient 10s ease infinite; */
 }
 
-@keyframes gradient {
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+  }
+  
+
+/* @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -17,4 +22,4 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
-}
+} */

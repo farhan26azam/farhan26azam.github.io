@@ -11,6 +11,11 @@ import Footer from "./components/footerComponents/Footer";
 import Loading from "./assets/refresh-arrow.png";
 import Projects from "./components/projectsComponents/Projects";
 import Skills from "./components/skillsComponents/Skills";
+import MobileMore from "./components/moreMobileComponents/MobileMore";
+import { Divider } from "./components/utils";
+import WorkDetails from "./components/workComponents/WorkDetails";
+import AboutDetails from "./components/aboutComponents/AboutDetails";
+import EducationDetails from "./components/educationComponents/EducationDetails";
 const loadingSVG = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -45,6 +50,29 @@ const loadingSVG = (
   </svg>
 );
 function App() {
+  const [windowSize, setWindowSize] = React.useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  React.useEffect(() => {
+    // Function to update window size state
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    // Attach event listener
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener on unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(true);
 
@@ -71,12 +99,18 @@ function App() {
   const mainPage = (
     <>
       <Hero />
+      {Divider}
       <Work />
+      {Divider}
       <About />
+      {Divider}
       <Education />
+      {Divider}
       <SocialLinks />
+      {Divider}
       <Projects />
-      <Skills />
+      {/* {Divider} */}
+      {/* <Skills /> */}
     </>
   );
 
@@ -91,7 +125,11 @@ function App() {
       ) : (
         // Render your website content here
 
-        <div className="flex flex-col justify-center items-center pt-[20px]">
+        <div
+          className={`flex flex-col justify-center items-center ${
+            windowSize?.width > 900 ? `pt-[20px]` : `pt-[10px]`
+          } w-[100vw]`}
+        >
           <Navbar backButton={goBack} homeButton={goHome} />
           <Routes>
             <Route path="/" element={mainPage} />
@@ -99,10 +137,11 @@ function App() {
             <Route path="/Connect" element={<SocialLinks />} />
             <Route path="/Projects" element={<Projects />} />
 
-            <Route path="/Education" element={<Education />} />
+            <Route path="/Education" element={<EducationDetails />} />
 
-            <Route path="/About" element={<About />} />
-            <Route path="/Work" element={<Work />} />
+            <Route path="/About" element={<AboutDetails />} />
+            <Route path="/Work" element={<WorkDetails />} />
+            <Route path="/More" element={<MobileMore />} />
           </Routes>
           <Footer />
         </div>
