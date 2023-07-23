@@ -115,7 +115,7 @@ const Education = () => {
           >
             <div className="text-[30px]">{EDUCATION_DEGREE.degree}</div>
             <div className="text-[20px]">{EDUCATION_DEGREE.tenure}</div>
-            <div className="text-[20px]">{EDUCATION_DEGREE.university}</div>
+            <a href={EDUCATION_DEGREE.university_site} target="_blank" className="text-[20px] cursor-pointer">{EDUCATION_DEGREE.university}</a>
           </div>
           <div
             className={`${

@@ -1,5 +1,11 @@
-export const NAVBAR_LINKS_CENTER = ["Work", "About", "Education", "Projects" , "Connect"];
-export const NAVBAR_LINKS_CENTER_SMALL = ["Work", "About", "Education", "More"];
+export const NAVBAR_LINKS_CENTER = [
+  "Work",
+  "Education",
+  "Projects",
+  "About",
+  "Connect",
+];
+export const NAVBAR_LINKS_CENTER_SMALL = ["Work", "Education", "About", "More"];
 export const NAVBAR_LINKS_LEFT = ["LinkedIN", "Github"];
 export const NAVBAR_LINKS_RIGHT = ["Download CV"];
 export const HERO_TEXT = "Hi. I'm Farhan, A Web Developer";
@@ -27,6 +33,7 @@ export const EDUCATION_DEGREE = {
   degree: "BS Computer Engineering",
   tenure: "2020 - 2024",
   university: "Information Technology University",
+  university_site: "https://itu.edu.pk/",
 };
 export const UNIVERSITY_COURSES = [
   "Object Oriented Programming",
@@ -51,13 +58,41 @@ export const CERTIFICATIONS = [
   },
   {
     name: "Crash Course on Python",
+    link: "https://www.coursera.org/account/accomplishments/certificate/D5HCZDJBUG9X",
     offeredBy: "Google | Coursera",
-    
   },
   { name: "Robotics Workshop", offeredBy: "Lincoln Corner Lahore" },
+  {
+    name: "Access Control Concepts",
+    offeredBy: "ISC squared | Coursera",
+    link: "https://www.coursera.org/account/accomplishments/certificate/XJHMJHYQNSTZ",
+  },
+  {
+    name: "Defense Against Digital Dark Arts",
+    offeredBy: "ISC squared | Coursera",
+    link: "https://www.coursera.org/account/accomplishments/certificate/4QF5TZR8FS7F",
+  },
+  {
+    name: "Security Principles",
+    offeredBy: "ISC squared | Coursera",
+    link: "https://www.coursera.org/account/accomplishments/certificate/9SYVGH542C5D",
+  },
+  {
+    name: "Arm Cortex-M Processors Overview",
+    offeredBy: "ARM | Coursera",
+    link: "https://www.coursera.org/account/accomplishments/certificate/DUSE3GP2GAXL",
+  },
+  {
+    name: "Introduction to Cloud Computing",
+    offeredBy: "IBM | Coursera",
+    link: "https://www.coursera.org/account/accomplishments/certificate/UHNFK4ZGW4GE",
+  },
   { name: "Cybersecurity Engg. Internship", offeredBy: "SAP | Forage" },
-  { name: "Intermediate SQL Queries", offeredBy: "Datacamp" },
-  { name: "Supervised & Unsupervised ML", offeredBy: "Datacamp" },
+  {
+    name: "Supervised & Unsupervised ML",
+    offeredBy: "Datacamp",
+    link: "https://www.datacamp.com/completed/statement-of-accomplishment/course/1165a3d819a07b406e7c2573315459d37bf280e2",
+  },
 ];
 
 // data.js (Create a new file to store the project data)
@@ -71,7 +106,8 @@ export const PROJECTS_DATA = [
     name: "NFT Marketplace Website",
     technology: "HTML, CSS, PHP",
     date: "June 2023",
-    description: "Developed an NFT marketplace website for trading digital assets only frontend.",
+    description:
+      "Developed an NFT marketplace website for trading digital assets only frontend.",
     features: ["User authentication", "NFTs listings", "NFTs profiles"],
     codeLink: "https://github.com/farhan26azam",
   },
@@ -79,15 +115,21 @@ export const PROJECTS_DATA = [
     name: "Zip/Unzip Utility for Linux",
     technology: "C++, Linux",
     date: "May 2023",
-    description: "Created a command-line utility for compressing and extracting files on Linux systems.",
-    features: ["File compression", "File extraction", "Support for various archive formats"],
+    description:
+      "Created a command-line utility for compressing and extracting files on Linux systems.",
+    features: [
+      "File compression",
+      "File extraction",
+      "Support for various archive formats",
+    ],
     codeLink: "https://github.com/farhan26azamy",
   },
   {
     name: "Image Processing using Python",
     technology: "Python, OpenCV",
     date: "April 2023",
-    description: "Implemented various image processing techniques using Python and OpenCV library.",
+    description:
+      "Implemented various image processing techniques using Python and OpenCV library.",
     features: ["Image filtering", "Fourier Transforms", "Frequency Mapping"],
     codeLink: "https://github.com/farhan26azam",
   },
@@ -95,31 +137,47 @@ export const PROJECTS_DATA = [
     name: "Water Level and Temperature System",
     technology: "Arduino, Sensors",
     date: "March 2023",
-    description: "Developed a system to monitor water level and temperature using Arduino and sensors.",
-    features: ["Water level measurement", "Temperature monitoring", "Alerts and notifications"],
+    description:
+      "Developed a system to monitor water level and temperature using Arduino and sensors.",
+    features: [
+      "Water level measurement",
+      "Temperature monitoring",
+      "Alerts and notifications",
+    ],
     codeLink: "https://github.com/farhan26azam",
   },
   {
     name: "Route Finder on Area Map",
     technology: "C++, Graph Algorithms",
     date: "February 2023",
-    description: "Implemented a route finding algorithm to find the shortest path on an area map.",
-    features: ["Graph representation", "Shortest path calculation", "Optimized pathfinding"],
+    description:
+      "Implemented a route finding algorithm to find the shortest path on an area map.",
+    features: [
+      "Graph representation",
+      "Shortest path calculation",
+      "Optimized pathfinding",
+    ],
     codeLink: "https://github.com/farhan26azam",
   },
   {
     name: "Course Management System",
     technology: "Java, Spring Boot, MySQL",
     date: "January 2023",
-    description: "Developed a web-based course management system for educational institutions.",
-    features: ["User roles and permissions", "Course enrollment", "Grade management"],
+    description:
+      "Developed a web-based course management system for educational institutions.",
+    features: [
+      "User roles and permissions",
+      "Course enrollment",
+      "Grade management",
+    ],
     codeLink: "https://github.com/farhan26azam",
   },
   {
     name: "Taj Mahal 3D model",
     technology: "CAD, 3D Printing",
     date: "December 2022",
-    description: "Designed and 3D printed a scale model of the Taj Mahal using CAD software.",
+    description:
+      "Designed and 3D printed a scale model of the Taj Mahal using CAD software.",
     features: ["CAD modeling", "3D printing", "Architectural design"],
     codeLink: "https://github.com/farhan26azam",
   },
@@ -127,16 +185,16 @@ export const PROJECTS_DATA = [
 
 // Other constants and data can be added here if needed
 
-  export const aboutData = {
-    name: "Muhammad Farhan Azam",
-    title: "Developer",
-    location: "Lahore, Pakistan",
-    email: "farhan26azam@gmail.com",
-    linkedin: "linkedin.com/in/muhammad-farhan-azam/",
-    github: "github.com/farhan26azam",
-    aboutMe: "Innovative and detail-oriented computer engineer specializing in front-end development and software engineering. With a strong proficiency in React JS, JavaScript, and comprehensive knowledge of database management systems, I bring a dynamic and adaptable approach to every project. My creative mindset, combined with analytical problem-solving skills, enables me to deliver exceptional solutions. Driven by a passion for continuous improvement, I actively seek out new technologies and industry trends to enhance user experiences and drive efficiency. Thriving in collaborative environments, I excel at tackling complex challenges and working alongside diverse teams. Seeking an opportunity to contribute my expertise to a forward-thinking organization at the forefront of cutting-edge software development, where I can make a significant impact and drive transformative innovations.",
-  };
-
+export const aboutData = {
+  name: "Muhammad Farhan Azam",
+  title: "Developer",
+  location: "Lahore, Pakistan",
+  email: "farhan26azam@gmail.com",
+  linkedin: "linkedin.com/in/muhammad-farhan-azam/",
+  github: "github.com/farhan26azam",
+  aboutMe:
+    "Innovative and detail-oriented computer engineer specializing in front-end development and software engineering. With a strong proficiency in React JS, JavaScript, and comprehensive knowledge of database management systems, I bring a dynamic and adaptable approach to every project. My creative mindset, combined with analytical problem-solving skills, enables me to deliver exceptional solutions. Driven by a passion for continuous improvement, I actively seek out new technologies and industry trends to enhance user experiences and drive efficiency. Thriving in collaborative environments, I excel at tackling complex challenges and working alongside diverse teams. Seeking an opportunity to contribute my expertise to a forward-thinking organization at the forefront of cutting-edge software development, where I can make a significant impact and drive transformative innovations.",
+};
 
 // constants.js
 export const workExperienceData = [
@@ -146,9 +204,9 @@ export const workExperienceData = [
     location: "Lahore",
     date: "June 2023 - Present",
     responsibilities: [
-      "Develop and maintain front-end features for web applications using React JS.",
-      "Collaborate with the team to design and implement user interfaces and experiences.",
-      "Utilize Redux for state management and ensure code quality through testing.",
+      "Develop and maintain front-end features for web applications using React JS",
+      "Collaborate with the team to design and implement user interfaces and experiences",
+      "Utilize Redux for state management and ensure code quality through testing",
     ],
   },
   // Add more work experiences if applicable
