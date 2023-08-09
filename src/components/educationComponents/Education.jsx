@@ -115,7 +115,13 @@ const Education = () => {
           >
             <div className="text-[30px]">{EDUCATION_DEGREE.degree}</div>
             <div className="text-[20px]">{EDUCATION_DEGREE.tenure}</div>
-            <a href={EDUCATION_DEGREE.university_site} target="_blank" className="text-[20px] cursor-pointer">{EDUCATION_DEGREE.university}</a>
+            <a
+              href={EDUCATION_DEGREE.university_site}
+              target="_blank"
+              className="text-[20px] cursor-pointer"
+            >
+              {EDUCATION_DEGREE.university}
+            </a>
           </div>
           <div
             className={`${
@@ -134,12 +140,21 @@ const Education = () => {
             } pt-0 grid gap-[5px] overflow-hidden`}
           >
             {UNIVERSITY_COURSES?.map((course) => (
-              <p className="border-b-[1px] border-black" key={course}>{`${course}`}</p>
+              <p
+                className="border-b-[1px] border-black"
+                key={course}
+              >{`${course}`}</p>
             ))}
           </div>
         </div>
-        <div className={`${windowSize?.width > 900 ? `w-[45%] rounded-e-3xl p-[20px]`:`w-[98%] rounded-3xl p-[5px] mt-2`}  bg-[rgb(255,255,255,0.8)]  h-full `}>
         <div
+          className={`${
+            windowSize?.width > 900
+              ? `w-[45%] rounded-e-3xl p-[20px]`
+              : `w-[98%] rounded-3xl p-[5px] mt-2`
+          }  bg-[rgb(255,255,255,0.8)]  h-full `}
+        >
+          <div
             className={`${
               windowSize?.width > 900
                 ? `p-[10px] text-[60px]`
@@ -148,11 +163,22 @@ const Education = () => {
           >
             Certifications
           </div>
-          <div className={`${windowSize?.width > 900 ? `p-[30px] pt-[30px]` : `p-[15px] pt-[10px]`} grid gap-[5px] text-[20px] overflow-auto`}>
+          <div
+            className={`${
+              windowSize?.width > 900
+                ? `p-[30px] pt-[30px]`
+                : `p-[15px] pt-[10px]`
+            } grid gap-[5px] text-[20px] overflow-auto`}
+          >
             {CERTIFICATIONS?.map((course) => (
               <a href={course?.link} target="_blank" key={course.name}>
-                <div className={`${windowSize?.width > 900 ? `flex`:``} justify-between cursor-pointer border-black border-b-[1px] p-1`}>
+                <div
+                  className={`${
+                    windowSize?.width > 900 ? `flex` : ``
+                  } justify-between cursor-pointer border-black border-b-[1px] p-1`}
+                >
                   <p>{course.name}</p>
+                  {course.featured && <>*</>}
                   <p className="text-blue-600">{course.offeredBy}</p>
                 </div>
               </a>

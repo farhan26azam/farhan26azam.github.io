@@ -55,6 +55,7 @@ export const CERTIFICATIONS = [
     details: "OS | CCNA | System Administration | System Security",
     link: "https://www.coursera.org/account/accomplishments/professional-cert/EUQUE46Y58PP",
     offeredBy: "Google",
+    featured: true,
   },
   {
     name: "Crash Course on Python",
@@ -93,6 +94,12 @@ export const CERTIFICATIONS = [
     offeredBy: "Datacamp",
     link: "https://www.datacamp.com/completed/statement-of-accomplishment/course/1165a3d819a07b406e7c2573315459d37bf280e2",
   },
+  {
+    name: "Certified in CyberSecurity",
+    offeredBy: "ISC squared | Coursera",
+    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/2FU83RVTXG69",
+    featured: true,
+  }
 ];
 
 // data.js (Create a new file to store the project data)
@@ -109,7 +116,7 @@ export const PROJECTS_DATA = [
     description:
       "Developed an NFT marketplace website for trading digital assets only frontend.",
     features: ["User authentication", "NFTs listings", "NFTs profiles"],
-    codeLink: "https://github.com/farhan26azam",
+    codeLink: "",
   },
   {
     name: "Zip/Unzip Utility for Linux",
@@ -122,7 +129,7 @@ export const PROJECTS_DATA = [
       "File extraction",
       "Support for various archive formats",
     ],
-    codeLink: "https://github.com/farhan26azamy",
+    codeLink: "",
   },
   {
     name: "Image Processing using Python",
@@ -131,7 +138,7 @@ export const PROJECTS_DATA = [
     description:
       "Implemented various image processing techniques using Python and OpenCV library.",
     features: ["Image filtering", "Fourier Transforms", "Frequency Mapping"],
-    codeLink: "https://github.com/farhan26azam",
+    codeLink: "",
   },
   {
     name: "Water Level and Temperature System",
@@ -144,7 +151,7 @@ export const PROJECTS_DATA = [
       "Temperature monitoring",
       "Alerts and notifications",
     ],
-    codeLink: "https://github.com/farhan26azam",
+    codeLink: "",
   },
   {
     name: "Route Finder on Area Map",
@@ -157,7 +164,7 @@ export const PROJECTS_DATA = [
       "Shortest path calculation",
       "Optimized pathfinding",
     ],
-    codeLink: "https://github.com/farhan26azam",
+    codeLink: "",
   },
   {
     name: "Course Management System",
@@ -170,7 +177,7 @@ export const PROJECTS_DATA = [
       "Course enrollment",
       "Grade management",
     ],
-    codeLink: "https://github.com/farhan26azam",
+    codeLink: "",
   },
   {
     name: "Taj Mahal 3D model",
@@ -179,8 +186,28 @@ export const PROJECTS_DATA = [
     description:
       "Designed and 3D printed a scale model of the Taj Mahal using CAD software.",
     features: ["CAD modeling", "3D printing", "Architectural design"],
-    codeLink: "https://github.com/farhan26azam",
+    codeLink: "",
   },
+  {
+    name: "Airbnb Clone",
+    technology: "React, Figma, NPM",
+    date: "June 2023",
+    description:"Developed an Airbnb clone using React and Figma tools.",
+    features: [
+      "Property View", "Property Search", "Property Listing"
+    ],
+    codeLink: "",
+  },
+  {
+    name: "Shirt Designer Web App",
+    technology: "React, Three JS",
+    date: "June 2023",
+    description:"Developed an online shirt designer web app using React and Three JS with custom and dynamic t-shirt model.",
+    features: [
+      "Shirt Design","Design Upload","Shirt View"
+    ],
+    codeLink: "",
+  }
 ];
 
 // Other constants and data can be added here if needed

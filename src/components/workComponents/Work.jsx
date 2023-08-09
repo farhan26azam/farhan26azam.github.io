@@ -112,10 +112,10 @@ const Work = () => {
             {windowSize?.width > 900 && (
               <div className="pl-[30px] text-[30px]">Responsibilities</div>
             )}
-            <div className={`${windowSize?.width > 900 ? `p-[30px] gap-[5px] grid-cols-2 text-[26px]`:`p-[6px] gap-3 text-[16px] grid-cols-1`} pt-0 grid`}>
+            <div className={`${windowSize?.width > 900 ? `p-[30px] gap-[5px] grid-cols-2 text-[26px]`:`p-[6px] gap-3 text-[16px] grid-cols-1`} pt-0 grid font-['Acorn-semibold']`}>
               {experience.responsibilities.map((responsibility, index) => (
                 <p
-                  className="bg-[var(--theme-color-2)] text-white p-[10px] rounded-xl "
+                  className="bg-[var(--theme-color-2)] text-[var(--light-gray)] p-[10px] rounded-xl "
                   key={index}
                 >
                   {responsibility}

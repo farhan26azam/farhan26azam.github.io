@@ -69,7 +69,9 @@ const Projects = () => {
       variants={variants}
       transition={{ duration: 0.5, ease: "easeInOut" }}
       ref={ref}
-      className={`${windowSize?.width > 900 ? `p-[20px]`:`p-[5px]`} font-['Acorn-bold'] w-[95%] min-h-[fit] mb-[5vh]`}
+      className={`${
+        windowSize?.width > 900 ? `p-[20px]` : `p-[5px]`
+      } font-['Acorn-bold'] w-[95%] min-h-[fit] mb-[5vh]`}
     >
       <div
         className={`${
@@ -91,7 +93,7 @@ const Projects = () => {
           {PROJECTS_DATA?.slice(0, 3)?.map((project, index) => (
             <motion.div
               key={index}
-              className="bg-[rgb(0,0,0,0.6)] p-4 rounded-lg shadow-md "
+              className="bg-[rgb(0,0,0,0.6)] p-4 rounded-lg shadow-md"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -107,15 +109,17 @@ const Projects = () => {
                   </li>
                 ))}
               </ul>
-              {/* <div className="flex mt-4 space-x-4 font-['Acorn-semibold']">
-              <a
-                href={project.codeLink}
-                target="_blank"
-                className="px-4 py-2 bg-[var(--theme-color-2)] text-white rounded-full"
-              >
-                Source Code
-              </a>
-            </div> */}
+              {project?.codeLink?.length > 0 && (
+                <div className="flex mt-4 space-x-4 font-['Acorn-semibold']">
+                  <a
+                    href={project.codeLink}
+                    target="_blank"
+                    className="px-4 py-2 bg-[var(--theme-color-2)] text-white rounded-full"
+                  >
+                    Source Code
+                  </a>
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
@@ -141,15 +145,17 @@ const Projects = () => {
                   </li>
                 ))}
               </ul>
-              {/* <div className="flex mt-4 space-x-4 font-['Acorn-semibold']">
-              <a
-                href={project.codeLink}
-                target="_blank"
-                className="px-4 py-2 bg-[var(--theme-color-2)] text-white rounded-full"
-              >
-                Source Code
-              </a>
-            </div> */}
+              {project?.codeLink?.length > 0 && (
+                <div className="flex mt-4 space-x-4 font-['Acorn-semibold']">
+                  <a
+                    href={project.codeLink}
+                    target="_blank"
+                    className="px-4 py-2 bg-[var(--theme-color-2)] text-white rounded-full"
+                  >
+                    Source Code
+                  </a>
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
