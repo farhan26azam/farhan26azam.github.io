@@ -220,21 +220,32 @@ export const aboutData = {
   linkedin: "linkedin.com/in/muhammad-farhan-azam/",
   github: "github.com/farhan26azam",
   aboutMe:
-    "Innovative and detail-oriented computer engineer specializing in front-end development and software engineering. With a strong proficiency in React JS, JavaScript, and comprehensive knowledge of database management systems, I bring a dynamic and adaptable approach to every project. My creative mindset, combined with analytical problem-solving skills, enables me to deliver exceptional solutions. Driven by a passion for continuous improvement, I actively seek out new technologies and industry trends to enhance user experiences and drive efficiency. Thriving in collaborative environments, I excel at tackling complex challenges and working alongside diverse teams. Seeking an opportunity to contribute my expertise to a forward-thinking organization at the forefront of cutting-edge software development, where I can make a significant impact and drive transformative innovations.",
+    "With a fresh Bachelor's degree in Computer Engineering from Information Technology University, my journey has led me to ZIN Technologies. There, as a Junior Full Stack Software Engineer, we focus on crafting robust web applications using Java and Angular, harnessing REST APIs to enhance user experiences. ",
 };
 
 // constants.js
 export const workExperienceData = [
   {
+    jobTitle: "Junior Full Stack Software Engineer",
+    company: "Zin Technologies",
+    location: "Lahore",
+    date: "June 2024 - Present",
+    responsibilities: [
+      "Work on full-stack development projects using Java full stack technologies",
+      "Design and implement RESTful APIs for web applications",
+      "Develop mobile applications using React Native and integrate with backend services",
+    ]
+  },
+  {
     jobTitle: "Front End Developer",
     company: "The Beelogix",
     location: "Lahore",
-    date: "June 2023 - Present",
+    date: "June 2023 - February 2024",
     responsibilities: [
       "Develop and maintain front-end features for web applications using React JS",
       "Collaborate with the team to design and implement user interfaces and experiences",
       "Utilize Redux for state management and ensure code quality through testing",
     ],
-  },
+  }
   // Add more work experiences if applicable
 ];

@@ -8,6 +8,7 @@ const variants = {
   visible: { x: 0 }, // End position (on-screen)
 };
 import react from "../../assets/react.json";
+import java from "../../assets/java.json";
 import javascript from "../../assets/javascript.json";
 import lottie from "lottie-web";
 
@@ -133,9 +134,9 @@ const Hero = () => {
               >
                 <div className="flex">
                   <div className={heroText}>A &nbsp;</div>
-                  <div className={heroText}>Web &nbsp;</div>
+                  <div className={heroText}>Full Stack &nbsp;</div>
                 </div>
-                <div className={heroText}>Developer</div>
+                <div className={heroText}>Engineer</div>
               </div>
             </div>
           ) : (

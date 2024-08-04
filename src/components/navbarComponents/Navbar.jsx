@@ -135,7 +135,7 @@ const Navbar = ({ backButton, homeButton }) => {
       </div>
       {windowSize?.width > 900 && (
         <a
-          href="https://github.com/farhan26azam/MuhammadFarhanAzamCV"
+          href="mailto:farhan26azam@gmail.com? subject=Request CV &body=Hi Farhan, I would like to request your CV."
           className="relative left-0 w-[90%] h-[full]"
           id="downloadButton"
           target="_blank"
